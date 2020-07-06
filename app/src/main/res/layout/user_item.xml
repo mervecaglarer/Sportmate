@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/chatProfileImage"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/chatProfileImage"
+        android:layout_toRightOf="@id/chatProfileImage"
+        android:fontFamily="@font/nunito"
+        android:text="username"
+        android:textColor="@color/txtColor"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/img_on"
+        android:visibility="gone"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@id/username"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@id/chatProfileImage"
+        android:layout_toEndOf="@id/chatProfileImage"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/img_off"
+        android:visibility="gone"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@id/username"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@id/chatProfileImage"
+        android:layout_toEndOf="@id/chatProfileImage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_toRightOf="@id/chatProfileImage"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:id="@+id/last_msg"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="20dp"
+        android:maxLines="1"/>
+
+    <ImageView
+        android:id="@+id/statusOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/username"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/status_on" />
+
+    <ImageView
+        android:id="@+id/statusOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/username"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/status_off" />
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor"
+        tools:context=".SignupActivity">
+
+        <EditText
+            android:id="@+id/txtCountry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/txtColor"
+            android:ems="10"
+            android:fontFamily="@font/nunito"
+            android:hint="Country / City"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtColor"
+            android:textColorHint="@color/txtColor"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPhoneNumber" />
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/txtColor"
+            android:ems="10"
+            android:fontFamily="@font/nunito"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtColor"
+            android:textColorHint="@color/txtColor"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFullName" />
+
+        <EditText
+            android:id="@+id/txtFullName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/txtColor"
+            android:ems="10"
+            android:fontFamily="@font/nunito"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtColor"
+            android:textColorHint="@color/txtColor"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtSignupEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/txtColor"
+            android:ems="10"
+            android:fontFamily="@font/nunito"
+            android:hint="E-mail"
+            android:inputType="textWebEmailAddress|textPersonName"
+            android:textColor="@color/txtColor"
+            android:textColorHint="@color/txtColor"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
+
+        <EditText
+            android:id="@+id/txtSignupPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/txtColor"
+            android:ems="10"
+            android:fontFamily="@font/nunito"
+            android:hint="Password"
+            android:inputType="textPersonName|textPassword"
+            android:textColor="@color/txtColor"
+            android:textColorHint="@color/txtColor"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSignupEmail" />
+
+        <EditText
+            android:id="@+id/txtSignupConfirmPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/txtColor"
+            android:ems="10"
+            android:fontFamily="@font/nunito"
+            android:hint="Confirm Password"
+            android:inputType="textPersonName|textPassword"
+            android:textColor="@color/txtColor"
+            android:textColorHint="@color/txtColor"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSignupPassword" />
+
+        <EditText
+            android:id="@+id/txtPhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/txtColor"
+            android:ems="10"
+            android:fontFamily="@font/nunito"
+            android:hint="Phone Number"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtColor"
+            android:textColorHint="@color/txtColor"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSignupConfirmPassword" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/nunito"
+            android:text="Sign Up"
+            android:textColor="@color/txtColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxPolicy" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:buttonTint="@color/txtColor"
+            android:fontFamily="@font/nunito"
+            android:text="@string/policy"
+            android:textColor="@color/txtColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCountry" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

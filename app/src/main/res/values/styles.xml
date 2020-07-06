@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">#F8F8FF</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/txtColor</item>
+        <item name="android:textColorPrimary">@color/txtColor</item>
+        <item name="android:colorAccent">@color/txtColor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ProgressDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/txtColor</item>
+        <item name="android:colorAccent">@color/txtColor</item>
+    </style>
+
+    <style name="DateAndTimePickerDialogCustom" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/txtColor</item>
+    </style>
+
+    <style name="ProgressBarCustom">
+        <item name="colorAccent">@color/txtColor</item>
+    </style>
+
+</resources>

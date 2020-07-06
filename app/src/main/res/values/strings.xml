@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SportMate</string>
+    <string name="forgot_password">Please type your e-mail address:</string>
+    <string name="policy">By signing up you agree to our Terms and that\nyou have read our Privacy Policy.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="branches">
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Volleyball</item>
+        <item>Tennis</item>
+    </string-array>
+</resources>

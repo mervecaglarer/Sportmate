@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor"
+        tools:context=".CreateTopicActivity">
+
+        <EditText
+            android:id="@+id/txtCreateContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/txtColor"
+            android:ems="10"
+            android:fontFamily="@font/nunito"
+            android:hint="Content"
+            android:inputType="textMultiLine"
+            android:textColor="@color/txtColor"
+            android:textColorHint="@color/txtColor"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCreateTitle" />
+
+        <EditText
+            android:id="@+id/txtCreateTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/txtColor"
+            android:ems="10"
+            android:fontFamily="@font/nunito"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            android:textColor="@color/txtColor"
+            android:textColorHint="@color/txtColor"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCreateTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/nunito"
+            android:text="Create"
+            android:textColor="@color/txtColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtBranchLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nunito"
+            android:text="Branch:"
+            android:textColor="@color/txtColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/txtCreateContent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCreateContent" />
+
+        <ImageButton
+            android:id="@+id/btnCreateCalendar"
+            android:layout_width="43dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/bgColor"
+            app:layout_constraintBottom_toBottomOf="@+id/txtDateLabel"
+            app:layout_constraintStart_toEndOf="@+id/txtDateLabel"
+            app:layout_constraintTop_toTopOf="@+id/txtDateLabel"
+            app:srcCompat="@drawable/ic_event" />
+
+        <Spinner
+            android:id="@+id/spinnerBranch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtBranchLabel"
+            app:layout_constraintStart_toEndOf="@+id/txtBranchLabel"
+            app:layout_constraintTop_toTopOf="@+id/txtBranchLabel" />
+
+        <TextView
+            android:id="@+id/txtDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nunito"
+            android:text="Date:"
+            android:textColor="@color/txtColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/txtCreateContent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBranchLabel" />
+
+        <TextView
+            android:id="@+id/txtTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito"
+            android:text="Time:"
+            android:textColor="@color/txtColor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/txtBranchLabel"
+            app:layout_constraintTop_toBottomOf="@+id/txtDateLabel" />
+
+        <ImageButton
+            android:id="@+id/btnCreateTime"
+            android:layout_width="43dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/bgColor"
+            app:layout_constraintBottom_toBottomOf="@+id/txtTimeLabel"
+            app:layout_constraintStart_toEndOf="@+id/txtTimeLabel"
+            app:layout_constraintTop_toTopOf="@+id/txtTimeLabel"
+            app:srcCompat="@drawable/ic_time" />
+
+        <EditText
+            android:id="@+id/txtCreatePrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/txtColor"
+            android:ems="10"
+            android:fontFamily="@font/nunito"
+            android:hint="Price (₺)"
+            android:inputType="number"
+            android:textColor="@color/txtColor"
+            android:textColorHint="@color/txtColor"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTimeLabel" />
+
+        <EditText
+            android:id="@+id/txtCreateAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="90dp"
+            android:backgroundTint="@color/txtColor"
+            android:ems="10"
+            android:fontFamily="@font/nunito"
+            android:gravity="start|top"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:textColor="@color/txtColor"
+            android:textColorHint="@color/txtColor"
+            android:textCursorDrawable="@null"
+            app:layout_constraintBottom_toTopOf="@+id/btnCreateTopic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCreatePrice" />
+
+        <TextView
+            android:id="@+id/txtCreateDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/txtColor"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnCreateCalendar"
+            app:layout_constraintStart_toEndOf="@+id/btnCreateCalendar"
+            app:layout_constraintTop_toTopOf="@+id/btnCreateCalendar" />
+
+        <TextView
+            android:id="@+id/txtCreateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/txtColor"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnCreateTime"
+            app:layout_constraintStart_toEndOf="@+id/btnCreateTime"
+            app:layout_constraintTop_toTopOf="@+id/btnCreateTime" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

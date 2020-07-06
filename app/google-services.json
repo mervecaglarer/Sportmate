@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "493305302052",
+    "firebase_url": "https://ceng-gui-sport-mate.firebaseio.com",
+    "project_id": "ceng-gui-sport-mate",
+    "storage_bucket": "ceng-gui-sport-mate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493305302052:android:25eece76db9344c7c09cb1",
+        "android_client_info": {
+          "package_name": "ceng.gui.sportmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493305302052-l0tb6fmc95era99dka5ilpquti6sg6nj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ceng.gui.sportmate",
+            "certificate_hash": "79350d0d2afb333046525aa1ad155c0d22b22964"
+          }
+        },
+        {
+          "client_id": "493305302052-ruergvdn62i7s2esjihs2ilphu536p4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1Dj1a89QJznI4yYnS_9plxUlKz6q5NiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493305302052-ruergvdn62i7s2esjihs2ilphu536p4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

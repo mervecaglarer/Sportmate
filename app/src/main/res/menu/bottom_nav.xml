@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainPage"
+        android:icon="@drawable/ic_action_home"
+        android:title=""
+        android:checkable="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/newTopic"
+        android:icon="@drawable/ic_action_create"
+        android:title=""
+        android:checkable="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/profilePage"
+        android:icon="@drawable/ic_action_profile"
+        android:title=""
+        android:checkable="true"
+        app:showAsAction="always" />
+</menu>

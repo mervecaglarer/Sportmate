@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsersProfileActivity">
+
+    <TextView
+        android:id="@+id/txtUsersProfileCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/bgColor"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="@font/nunito"
+        android:textAlignment="textStart"
+        android:textColor="@color/txtColor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txtUsersProfilePhone"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsersProfilePhone" />
+
+    <TextView
+        android:id="@+id/txtUsersProfilePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/bgColor"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="@font/nunito"
+        android:textAlignment="textStart"
+        android:textColor="@color/txtColor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txtUsersProfileEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsersProfileEmail" />
+
+    <TextView
+        android:id="@+id/txtUsersProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/bgColor"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="@font/nunito"
+        android:textAlignment="textStart"
+        android:textColor="@color/txtColor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txtUsersProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsersProfileName" />
+
+    <TextView
+        android:id="@+id/txtUsersProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/bgColor"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="@font/nunito"
+        android:textAlignment="textStart"
+        android:textColor="@color/txtColor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/txtUserLabelName"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/txtColor"
+        app:layout_constraintBottom_toTopOf="@+id/txtUsersProfileCountry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsersProfilePhone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/txtColor"
+        app:layout_constraintBottom_toTopOf="@+id/txtUsersProfileEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsersProfileName" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/txtColor"
+        app:layout_constraintBottom_toTopOf="@+id/txtUsersProfilePhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsersProfileEmail" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="220dp"
+        android:background="@color/txtColor"
+        app:layout_constraintBottom_toBottomOf="@+id/txtUserLabelCountry"
+        app:layout_constraintEnd_toStartOf="@+id/txtUsersProfileEmail"
+        app:layout_constraintStart_toEndOf="@+id/txtUserLabelEmail"
+        app:layout_constraintTop_toTopOf="@+id/txtUserLabelName" />
+
+    <TextView
+        android:id="@+id/txtUserLabelEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="EMAIL"
+        android:textColor="@color/txtColor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txtUserLabelName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtUsersProfileEmail"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <TextView
+        android:id="@+id/txtUserLabelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/nunito"
+        android:text="NAME"
+        android:textColor="@color/txtColor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtUsersProfileName"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <TextView
+        android:id="@+id/txtUserLabelPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="PHONE"
+        android:textColor="@color/txtColor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txtUserLabelEmail"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtUsersProfilePhone"
+        tools:layout_editor_absoluteY="386dp" />
+
+    <TextView
+        android:id="@+id/txtUserLabelCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="CITY"
+        android:textColor="@color/txtColor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txtUserLabelPhone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtUsersProfileCountry"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="198dp"
+        android:background="@drawable/first_layer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtUsersProfileUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:ems="10"
+            android:focusable="false"
+            android:fontFamily="@font/nunito"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textAlignment="center"
+            android:textColor="@color/bgColor"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usersProfileImage" />
+
+        <ImageView
+            android:id="@+id/usersProfileImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Send Message"
+        android:textColor="@color/txtColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsersProfileCountry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
